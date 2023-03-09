@@ -1,0 +1,15 @@
+<nav class="navbar bg-light navcolor">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        Noticias Salvajes
+      </a>
+      <nav class="nav justify-content-right">
+        <a class="nav-link text-dark" href="/">Home</a>
+        <a class="nav-link text-dark" href="/">Categorias</a>
+        <a class="nav-link text-dark" href="/login">Login</a>
+        <% if (usuario.nombre) {%>
+        <a class="nav-link text-dark" href="/noticias">Hola! <%= usuario.nombre.substring(0, 15) %></a>
+        <% } %>
+      </nav>
+    </div>
+</nav>
